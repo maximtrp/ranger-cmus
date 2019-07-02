@@ -1,6 +1,6 @@
 # ranger-cmus
 
-This plugin adds 3 custom commands for integrating [ranger](https://ranger.github.io) and [cmus](https://cmus.github.io) audio player:
+This is a plugin for [ranger](https://ranger.github.io) file manager that adds 3 custom commands for interacting with [cmus](https://cmus.github.io) audio player:
 
 * `:cmus_play`: sending files/folders to playlist.
 * `:cmus_lib`: adding files/folders to library.
@@ -21,5 +21,3 @@ map ep cmus_play
 map el cmus_lib
 map eq cmus_queue
 ```
-
-![ranger-cmus](ranger-cmus.png "ranger-cmus")
