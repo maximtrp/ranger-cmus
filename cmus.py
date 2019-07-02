@@ -21,7 +21,7 @@ class cmus_play(Command):
         cmus = ["cmus-remote"]
         cmus.extend([f.path for f in file_objs])
         self.fm.execute_command(cmus)
-        self.fm.notify("Files were sent to cmus!")
+        self.fm.notify("Files were sent to cmus playlist")
 
 class cmus_queue(Command):
     def execute(self):
