@@ -1,6 +1,4 @@
-import os
 from ranger.api.commands import *
-from ranger.core.loader import CommandLoader
 
 def get_files(fm):
     ftd = fm.thisdir
@@ -17,7 +15,7 @@ class cmus_play(Command):
     def execute(self):
         """ Add selected files or folders to playlist """
         file_objs = get_files(self.fm)
-       
+
         cmus = ["cmus-remote"]
         cmus.extend([f.path for f in file_objs])
         self.fm.execute_command(cmus)
@@ -42,3 +40,4 @@ class cmus_lib(Command):
         cmus.extend([f.path for f in file_objs])
         self.fm.execute_command(cmus)
         self.fm.notify("Files were sent to cmus library")
+
