@@ -20,6 +20,7 @@ class cmus_play(Command):
         cmus.extend([f.path for f in file_objs])
         self.fm.execute_command(cmus)
         self.fm.notify("Files were sent to cmus playlist")
+        self.fm.thisdir.mark_all(False)
 
 class cmus_queue(Command):
     def execute(self):
@@ -30,6 +31,7 @@ class cmus_queue(Command):
         cmus.extend([f.path for f in file_objs])
         self.fm.execute_command(cmus)
         self.fm.notify("Files were sent to cmus queue")
+        self.fm.thisdir.mark_all(False)
 
 class cmus_lib(Command):
     def execute(self):
@@ -40,4 +42,5 @@ class cmus_lib(Command):
         cmus.extend([f.path for f in file_objs])
         self.fm.execute_command(cmus)
         self.fm.notify("Files were sent to cmus library")
+        self.fm.thisdir.mark_all(False)
 
