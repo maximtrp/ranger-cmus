@@ -8,7 +8,7 @@ This is a plugin for [ranger](https://ranger.github.io) file manager that adds 3
 
 ## Installation
 
-Copy `cmus.py` file to `~/.config/ranger/plugins` folder and restart ranger.
+Copy `cmus.py` file to `~/.config/ranger/plugins` folder or clone this repo and run `make`. Then restart ranger.
 
 ## Usage
 
